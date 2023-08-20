@@ -1,38 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PC Builder Website
 
-## Getting Started
+## Description
 
-First, run the development server:
+The PC Builder Website is a platform that allows users to customize and build their own PC configurations according to their preferences and needs. Whether you're a gamer, a content creator, or someone in need of a powerful workstation, this website provides an intuitive interface to help you select and configure components for your dream PC.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Getting Started](#getting-started)
+- [Features](#features)
+- - [Component Selection](#component-selection)
+  - [Real-time Compatibility](#real-time-compatibility)
+  - [Price Estimation](#price-estimation)
+  - [Save and Load Configurations](#save-and-load-configurations)
+  - [User Accounts](#user-accounts)
+  - [Responsive Design](#responsive-design)
+- [Usage](#usage)
+- [Technology](#technology)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Component Selection
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Users can choose components from various categories such as CPU, GPU, RAM, storage, and more.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Real-time Compatibility
 
-## Learn More
+The website provides instant feedback on component compatibility, ensuring a smooth building process.
 
-To learn more about Next.js, take a look at the following resources:
+### Price Estimation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+As users customize their configuration, the estimated price is updated in real-time, helping users stay within their budget.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Save and Load Configurations
 
-## Deploy on Vercel
+Registered users can save their configurations for later use and load previous configurations for modifications.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### User Accounts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Create an account to access advanced features like saving multiple configurations and syncing across devices.
+
+### Responsive Design
+
+The website is designed to provide a seamless experience across different devices and screen sizes.
+
+## Usage
+
+1. Select Components: Choose desired components from different categories.
+2. Check Compatibility: The website will alert you if there are any compatibility issues.
+3. Estimate Price: The estimated price will be displayed as you modify your configuration.
+4. Save and Load: Save configurations for future use and load them when needed.
+5. User Account: Register for an account to access enhanced features.
+
+## Technology
+
+- **Frontend:** Next.js, React
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, MOngoose
+- **Authentication:** Next Auth
+- **Styling:** CSS Modules, Tailwind CSS
+- **Real-time Updates:** MongoDB Change Streams
+- **Version Control:** Git
+
