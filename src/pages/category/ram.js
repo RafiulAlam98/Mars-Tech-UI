@@ -1,12 +1,8 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-
 import MainLayout from "@/components/Layouts/MainLayout";
 import Link from "next/link";
-
 import React from "react";
 
-export default function CpuCategoryPage({ cpuProducts }) {
-  console.log(cpuProducts);
+export default function RamPage({ catProd }) {
   return (
     <section>
       <h2 className="text-3xl text-center my-8 text-teal-800">
@@ -15,7 +11,7 @@ export default function CpuCategoryPage({ cpuProducts }) {
         </span>
       </h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        {cpuProducts?.map((product) => (
+        {catProd?.map((product) => (
           <>
             {" "}
             <div className=" bg-white mt-5 rounded shadow-lg">
@@ -55,8 +51,7 @@ export default function CpuCategoryPage({ cpuProducts }) {
     </section>
   );
 }
-
-CpuCategoryPage.getLayout = function getLayout(page) {
+RamPage.getLayout = function getLayout(page) {
   return <MainLayout>{page}</MainLayout>;
 };
 
@@ -65,12 +60,10 @@ export async function getStaticProps() {
     "https://mars-tech-backend.vercel.app/api/v1/component"
   );
   const products = await res.json();
-  const cpuProducts = products.data.filter(
-    (product) => product.category === "CPU / Processor"
-  );
+  const catProd = products.data.filter((product) => product.category === "RAM");
   return {
     props: {
-      cpuProducts,
+      catProd,
     },
   };
 }

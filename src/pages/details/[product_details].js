@@ -1,11 +1,11 @@
 import MainLayout from "@/components/Layouts/MainLayout";
 import Link from "next/link";
-import { faMinus, faPlus, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
 import React from "react";
 
-const xmark = <FontAwesomeIcon icon={faXmark} />;
+
 const sub = <FontAwesomeIcon icon={faMinus} />;
 const add = <FontAwesomeIcon icon={faPlus} />;
 
