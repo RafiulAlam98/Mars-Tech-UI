@@ -18,7 +18,10 @@ export default function CpuCategoryPage({ cpuProducts }) {
         {cpuProducts?.map((product) => (
           <>
             {" "}
-            <div className=" bg-white mt-5 rounded shadow-lg">
+            <div
+              key={product._id}
+              className="  bg-white mt-5 rounded shadow-lg"
+            >
               <figure className="mx-auto">
                 <img src={product.img} alt="" className="w-full h-1/2"></img>
               </figure>

@@ -27,11 +27,8 @@ export default function Header() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-[#059862] text-white rounded w-52"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
             <li>
               <a>Category</a>
               <ul className="p-2">
@@ -39,27 +36,24 @@ export default function Header() {
                   <Link href="category/cpu">CPU / Processor</Link>
                 </li>
                 <li>
-                  <Link href="">Motherboard</Link>
+                  <Link href="category/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href="">RAM</Link>
+                  <Link href="category/ram">RAM</Link>
                 </li>
                 <li>
-                  <Link href="">Power Supply Unit</Link>
+                  <Link href="category/psu">Power Supply Unit</Link>
                 </li>
                 <li>
-                  <Link href="">Storage Device</Link>
+                  <Link href="category/storage">Storage Device</Link>
                 </li>
                 <li>
-                  <Link href="">Monitor</Link>
+                  <Link href="category/monitor">Monitor</Link>
                 </li>
                 <li>
-                  <Link href="">Others</Link>
+                  <Link href="category/others">Others</Link>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
             </li>
           </ul>
         </div>
@@ -71,47 +65,43 @@ export default function Header() {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
+        <ul className="menu menu-horizontal px-1 z-[1] rounded">
           <li tabIndex={0}>
             <details>
-              <summary>Category</summary>
+              <summary className="text-white font-semibold text-md hover:bg-[#059862] hover:rounded hover:text-white ">
+                Category
+              </summary>
               <ul className="p-2">
                 <li>
                   <Link href="category/cpu">CPU / Processor</Link>
                 </li>
                 <li>
-                  <Link href="">Motherboard</Link>
+                  <Link href="category/motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href="">RAM</Link>
+                  <Link href="category/ram">RAM</Link>
                 </li>
                 <li>
-                  <Link href="">Power Supply Unit</Link>
+                  <Link href="category/psu">Power Supply Unit</Link>
                 </li>
                 <li>
-                  <Link href="">Storage Device</Link>
+                  <Link href="category/storage">Storage Device</Link>
                 </li>
                 <li>
-                  <Link href="">Monitor</Link>
+                  <Link href="category/monitor">Monitor</Link>
                 </li>
                 <li>
-                  <Link href="">Others</Link>
+                  <Link href="category/others">Others</Link>
                 </li>
               </ul>
             </details>
-          </li>
-          <li>
-            <a>Item 3</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
         <Link href="/pc_builder">
           {" "}
-          <button className="btn btn-sm border-none bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
+          <button className="rounded btn-sm border-none bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
             Pc Builder
           </button>
         </Link>
