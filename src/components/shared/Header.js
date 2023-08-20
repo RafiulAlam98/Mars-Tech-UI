@@ -3,10 +3,13 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-[#514280]">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label
+            tabIndex={0}
+            className="btn text-white font-bold btn-ghost lg:hidden mr-4"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -33,7 +36,7 @@ export default function Header() {
               <a>Category</a>
               <ul className="p-2">
                 <li>
-                  <Link href="">CPU / Processor</Link>
+                  <Link href="category/cpu">CPU / Processor</Link>
                 </li>
                 <li>
                   <Link href="">Motherboard</Link>
@@ -60,7 +63,12 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">MARS TECH</a>
+        <Link
+          href="/"
+          className="font-bold text-slate-100 bg-none text-xl font-serif"
+        >
+          MARS_TECH
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -72,7 +80,7 @@ export default function Header() {
               <summary>Category</summary>
               <ul className="p-2">
                 <li>
-                  <Link href="">CPU / Processor</Link>
+                  <Link href="category/cpu">CPU / Processor</Link>
                 </li>
                 <li>
                   <Link href="">Motherboard</Link>
@@ -103,7 +111,9 @@ export default function Header() {
       <div className="navbar-end">
         <Link href="/pc_builder">
           {" "}
-          <button className="btn">Pc Builder</button>
+          <button className="btn btn-sm border-none bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
+            Pc Builder
+          </button>
         </Link>
       </div>
     </div>

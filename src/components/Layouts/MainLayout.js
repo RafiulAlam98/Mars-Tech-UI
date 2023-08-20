@@ -6,7 +6,7 @@ export default function MainLayout({ children }) {
   return (
     <div>
       <Header />
-      <div className="min-h-screen max-w-[1000px] mx-auto">{children}</div>
+      <div className="min-h-screen max-w-[1100px] mx-auto">{children}</div>
       <Footer />
     </div>
   );
