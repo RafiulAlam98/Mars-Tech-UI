@@ -1,5 +1,8 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import React from "react";
+
+const user = <FontAwesomeIcon icon={faUser} />;
 
 export default function Header() {
   return (
@@ -101,8 +104,17 @@ export default function Header() {
       <div className="navbar-end">
         <Link href="/pc_builder">
           {" "}
-          <button className="rounded btn-sm border-none bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
+          <button className="rounded btn-sm border-none mr-3 bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
             Pc Builder
+          </button>
+        </Link>
+        <Link href="/login">
+          <button className="flex justify-center items-center hover:bg-[#059862]  bg-[#04AA6D] px-2 py-1 rounded ">
+            <button className="text-white mr-3 text-md">{user}</button>
+            <button>
+              {" "}
+              <h6 className="text-sm text-white">register or login</h6>
+            </button>
           </button>
         </Link>
       </div>
