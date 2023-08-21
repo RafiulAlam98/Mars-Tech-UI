@@ -1,10 +1,13 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 
 const user = <FontAwesomeIcon icon={faUser} />;
 
 export default function Header() {
+  const { data: session } = useSession();
+
   return (
     <div className="navbar bg-[#514280]">
       <div className="navbar-start">
@@ -108,15 +111,25 @@ export default function Header() {
             Pc Builder
           </button>
         </Link>
-        <Link href="/login">
-          <button className="flex justify-center items-center hover:bg-[#059862]  bg-[#04AA6D] px-2 py-1 rounded ">
-            <button className="text-white mr-3 text-md">{user}</button>
-            <button>
-              {" "}
-              <h6 className="text-sm text-white">register or login</h6>
-            </button>
+
+        {session?.user?.email ? (
+          <button
+            onClick={() => signOut()}
+            className="rounded btn-sm border-none mr-3 bg-red-600 hover:bg-red-800 text-white font-semibold "
+          >
+            Logout
           </button>
-        </Link>
+        ) : (
+          <Link href="/login">
+            <div className="flex justify-center items-center rounded btn-sm border-none mr-3 bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
+              <button className="text-white mr-3 text-xl">{user}</button>
+              <button>
+                {" "}
+                <h6 className="text-sm text-white">Register or Login</h6>
+              </button>
+            </div>
+          </Link>
+        )}
       </div>
     </div>
   );

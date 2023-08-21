@@ -18,14 +18,14 @@ export default function Banner() {
           />
           <div>
             <h1 className="text-5xl font-bold">
-              Build Your Dream PC: Unleash Your Performance Potential
+              Unleash Your Ultimate Power: Build Your Perfect PC with Us!
             </h1>
             <p className="py-6">
-              Build Your Dream PC: Unleash Your Performance Potential
+              Crafting Dreams, One PC at a Time: Your Custom-Built PC Awaits!
             </p>
             <Link href="/pc_builder">
               {" "}
-              <button className="btn btn-sm border-none bg-[#04AA6D] hover:bg-[#059862] text-white font-semibold ">
+              <button className="btn btn-sm border-none bg-[#04AA6D] rounded hover:bg-[#059862] text-white font-semibold ">
                 Get Started
               </button>
             </Link>

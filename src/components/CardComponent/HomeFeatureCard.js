@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function HomeFeatureCard({ product }) {
-  console.log(product);
+
   const { name, img, category, price, _id, status, averageRating } = product;
   return (
     <Link href={`/details/${_id}`}>

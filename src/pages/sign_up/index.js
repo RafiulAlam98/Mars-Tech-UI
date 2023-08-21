@@ -65,14 +65,19 @@ export default function index() {
         </p>
 
         <div className="divider text-black font-bold">OR</div>
-        <button className="btn  rounded btn-sm btn-outline bg-white w-full">
-          Continue With Google
-        </button>
-        <div className="divider text-black font-bold">OR</div>
-        <button className="btn rounded btn-sm btn-outline bg-white w-full">
+        <button
+          onClick={() =>
+            signIn("github", {
+              callbackUrl: "http://localhost:3000",
+            })
+          }
+          className="btn rounded btn-sm btn-outline bg-white w-full"
+        >
           Continue With Github
         </button>
       </div>
     </div>
   );
 }
+
+
