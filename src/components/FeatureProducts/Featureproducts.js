@@ -3,7 +3,7 @@ import React from "react";
 import HomeFeatureCard from "../CardComponent/HomeFeatureCard";
 
 export default function Featureproducts({ allProducts }) {
-  // console.log(allProducts);
+  console.log(allProducts);
   return (
     <div className="min-h-screen mt-8">
       <h1 className="flex justify-center text-2xl text-purple-400 font-bold">

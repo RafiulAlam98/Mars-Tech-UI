@@ -71,7 +71,7 @@ export default function ProductDetails({ product }) {
             >
               {add}
             </button>
-            <Link href="/buy_now">
+            <Link href="/pc_builder">
               <button className="bg-blue-600 text-white rounded px-4 py-1 hover:bg-[#3749BB] font-semibold font-sans">
                 Buy Now
               </button>

@@ -8,7 +8,7 @@ export default function HomeFeatureCard({ product }) {
   const { name, img, category, price, _id, status, averageRating } = product;
   return (
     <Link href={`/details/${_id}`}>
-      <div className=" bg-white mt-5 rounded shadow-lg">
+      <div className=" bg-white mt-5 rounded shadow-lg hover:border hover:border-orange-600">
         <figure className="mx-auto">
           <img src={img} alt="" className="w-full h-1/2"></img>
         </figure>

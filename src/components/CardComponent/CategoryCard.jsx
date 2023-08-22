@@ -25,7 +25,7 @@ export default function CategoryCard({ product }) {
           onClick={() => handleSelectedComponent(product)}
           className="text-sm font-semibold text-white bg-blue-600 hover:bg-blue-800 rounded w-full mt-3 py-1"
         >
-          Add
+          Add To Build
         </button>
         <Link href={`/details/${product._id}`}>
           <button className="text-sm font-semibold text-white bg-blue-600 hover:bg-blue-800 rounded w-full mt-3 py-1">
