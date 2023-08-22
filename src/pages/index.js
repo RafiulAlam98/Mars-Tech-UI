@@ -8,7 +8,6 @@ export default function Homepage({ products }) {
 
   return (
     <>
-      {" "}
       <Head>
         <title>E-Tech Site</title>
         <meta

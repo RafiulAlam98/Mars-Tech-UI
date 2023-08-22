@@ -112,7 +112,7 @@ export default function PcBuilder() {
       <section className="grid grid-cols-6 gap-4 my-4 ">
         {componentTypes.map((comp) => (
           <>
-            <div className="py-2">
+            <div key={comp.Title} className="py-2">
               {comp.img === "" ? (
                 <section className="ml-4 text-4xl"> {comp.icon}</section>
               ) : (
