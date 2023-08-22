@@ -1,4 +1,4 @@
-# PC Builder Website
+# PC Builder Website Using NEXT JS
 
 ### Live Link: https://mars-tech.vercel.app/
 ### GitHub Repo: https://github.com/RafiulAlam98/mars-tech-frontend
