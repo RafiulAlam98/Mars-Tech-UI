@@ -56,7 +56,7 @@ The website is designed to provide a seamless experience across different device
 
 ## Technology
 
-- **Frontend:** Next.js, React
+- **Frontend:** Next.js, React, Redux
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB, MOngoose
 - **Authentication:** Next Auth
